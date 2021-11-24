@@ -33,7 +33,11 @@ const FileUpload=({setSelectedImages})=>{
       <div className="heading">React Multiple Images Preview</div>
       <div>
         <input type="file" id="file" multiple onChange={handleImageChange} />
-        src/FileUpload.js
+        <div className="label-holder">
+          <label htmlFor="file" className="label">
+            <i className="fa fa-file-image-o" aria-hidden="true"></i>
+          </label>
+        </div>
       </div>
     </div>
   )
