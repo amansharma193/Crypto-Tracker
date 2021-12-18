@@ -34,7 +34,7 @@ const Coin = ({name, image, symbol, market_cap, current_price,total_volume,price
             (price_change_percentage_24h<0 ?(
             <p className='coin-percent red' >{price_change_percentage_24h.toFixed(2)}%</p>)
             :(
-              <p className='coin-percent green' >{price_change_percentage_24h.toFixed(2)}%</p>
+              <p className='coin-percent green' >{price_change_percentage_24h?(price_change_percentage_24h.toFixed(2)):(0)}%</p>
             ))
           }
         </div>
